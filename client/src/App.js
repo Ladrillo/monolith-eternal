@@ -6,7 +6,7 @@ function App() {
   const [greeting, setGreeting] = useState('')
 
   useEffect(() => {
-    fetch('/api/greeting?name=evans')
+    fetch('/api/greeting?name=sergei')
       .then(res => res.json())
       .then(greeting => setGreeting(greeting))
       .catch(err => {
